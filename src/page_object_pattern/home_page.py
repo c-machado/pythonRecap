@@ -19,6 +19,7 @@ class HomePage(BasePage):
     LOGIN = 'pt-login'
     MAIN_LINK ='ca-nstab-main'
 
+
     def set_search_query(self, query: str):
         """
         Search for a string

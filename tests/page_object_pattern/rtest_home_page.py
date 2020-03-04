@@ -19,7 +19,7 @@ class TestHomePage(TestTemplate):
         """
         Check Home page buttons are displayed
         """
-        main_page = HomePage(self.driver)
+        main_page = (self.driver)
         assert main_page.check_create_account()
         assert main_page.check_login()
         assert main_page.check_search()
@@ -31,6 +31,7 @@ class TestHomePage(TestTemplate):
         main_page = HomePage(self.driver)
         main_page.login()
         main_page.search()
+
 
 
 if __name__ == '__main__':
